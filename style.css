@@ -31,25 +31,25 @@ p {
 }
 
 #main-title-container{
+    background-image: image('img/future-background.png');
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: maroon; 
-    color:antiquewhite;
+   /* background-color: maroon;
+    color:antiquewhite; */
     padding: 15px;
 }
 
 #main-title-container h1, h4{
-    color: antiquewhite;
+    /* color: antiquewhite;*/
     width: 100%;
     margin: 0;
     padding: 0;
     
 }
 
-#main-title{
-    
+#main-title{    
     padding: 20px;
 }
 .personal-photo{
@@ -58,6 +58,9 @@ p {
     padding: 10px;
 }
 
+.decorative-image{
+    width: 100%;
+}
 .last-posts-container {
     width = 100%;
     display: flex; 
@@ -118,6 +121,7 @@ footer a:checked{
 }
 
 .horizontal-menu{
+    font-family:  'Boogaloo', sans-serif;
     margin: 10px;
     padding: 5px;
     text-align: center;
