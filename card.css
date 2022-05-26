@@ -6,15 +6,13 @@ body {
 
 .card-container {
     width: 100%;
-    height: 100vh;
-    background-color: blanchedalmond;
+    height: 100vh;    
     display: flex;
     align-items: center;
     justify-content: center;
 }    
 
-.card{
-    color: blanchedalmond;
+.card{    
     width: 600px;
     height: 400px;
     background-image: url('./img/card-background.png');
@@ -25,6 +23,7 @@ body {
     justify-content: center;
     align-items: center;
     filter: grayscale(0.5);
+    color: blanchedalmond;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -39,11 +38,11 @@ body {
 }
 
 .card-content::before {
-    content: '';
-    width: 100px;
-    height: 100px;
+    content: ' ';
     position: absolute;
-    display: block;
+    width: 100px;
+    height: 100px;    
+    /*display: block;*/
     border: 1px solid blanchedalmond;
     opacity: 0;
     transition: 0.3s;
@@ -58,9 +57,11 @@ body {
 }
 
 .card-content p{
-    font-size: 20px;
+    font-size: 0px;
+    visibility: hidden;
+    opacity: 0;
+    font-weight: bold;
     text-transform: capitalize;
-    margin: 0;
     transition: 0.3s;
 }
 
@@ -68,13 +69,13 @@ body {
     filter: unset;
 }
 
-.card:hover > .card-container::before{
-    width: 500;
-    height: 300;
+.card:hover > .card-content::before{
+    width: 500px;
+    height: 300px;
     opacity: 1;
 }
 
-.card:hover > .card-container p {
+.card:hover > .card-content p {
     font-size: 20px;
     visibility: visible;
     opacity: 1;
