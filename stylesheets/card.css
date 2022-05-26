@@ -15,7 +15,7 @@ body {
 .card{    
     width: 600px;
     height: 400px;
-    background-image: url('./img/card-background.png');
+    background-image: url('./../img/card-background.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
