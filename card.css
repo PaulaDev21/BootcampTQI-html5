@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+body {
+    font-family: Oswald, sans-serif; 
+}
+
+.card-container {
+    width: 100%;
+    height: 100vh;
+    background-color: blanchedalmond;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}    
+
+.card{
+    color: blanchedalmond;
+    width: 600px;
+    height: 400px;
+    background-image: url('./img/card-background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(0.5);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-content{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card-content::before {
+    content: '';
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    display: block;
+    border: 1px solid blanchedalmond;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.card-content h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.card-content p{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.card:hover {
+    filter: unset;
+}
+
+.card:hover > .card-container::before{
+    width: 500;
+    height: 300;
+    opacity: 1;
+}
+
+.card:hover > .card-container p {
+    font-size: 20px;
+    visibility: visible;
+    opacity: 1;
+}
