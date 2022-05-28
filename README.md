@@ -1,6 +1,12 @@
 # BootcampTQI-html5
 
-Courses on HTML5 + CSS
+## Course on HTML5 + CSS
 
-## Projects
-A portfolio with css animations. 
+### Projects
+* [A portfolio template with css animations]('./tqi-html-css-project.html')
+
+* [Card Animation - Solo](./card.html)
+
+* [Hamburguer Menu Animation - Solo](./hamburguer.html)
+
+* [Balloon Drawing](./balloon.html)

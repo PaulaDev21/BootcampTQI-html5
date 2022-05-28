@@ -42,7 +42,6 @@ body {
     position: absolute;
     width: 100px;
     height: 100px;    
-    /*display: block;*/
     border: 1px solid blanchedalmond;
     opacity: 0;
     transition: 0.3s;
