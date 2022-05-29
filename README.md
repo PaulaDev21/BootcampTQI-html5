@@ -2,7 +2,7 @@
 
 ## Course on HTML5 + CSS
 
-### Projects
+### Projects' code (html)
 * [A portfolio template with css animations]('./tqi-html-css-project.html')
 
 * [Card Animation - Solo](./card.html)
